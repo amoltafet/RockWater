@@ -1,4 +1,4 @@
-# myPL
+# myPL (my Programming Language)
 My own programming language with the following capabilities
  - Module System
  - Lexer
