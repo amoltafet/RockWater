@@ -1,0 +1,33 @@
+#----------------------------------------------------------------------
+# Very basic module
+#----------------------------------------------------------------------
+
+fun void printNewLine() {
+  print("\n")
+}
+
+type T {
+  var int j = 0
+}
+
+fun void addOne(int i) {
+  i = i + 1
+  print(i)
+}
+
+fun int f1(int x, int y) {
+  print("... in f1")
+  return y
+}
+
+fun string f2(string x) {
+  print("... in f2, x = " + x) 
+  return x + x
+}
+
+fun string f3(string x) {
+  x = "hello world"
+  print("... in f3, after f2, x = " + x)
+  return x
+}
+

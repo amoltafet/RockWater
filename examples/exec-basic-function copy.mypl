@@ -1,0 +1,33 @@
+
+#----------------------------------------------------------------------
+# Very basic function tests
+#----------------------------------------------------------------------
+
+
+fun void println(string s) {
+  print(s + "\n")
+}
+
+fun int f1(int x, int y) {
+ 
+  println("... in f1")
+  return z
+}
+
+fun string f2(string x) {
+  println("... in f2, x = " + x) 
+  return x + x
+}
+
+fun string f3(string x) {
+  x = f2(x)
+  println("... in f3, after f2, x = " + x)
+  return x
+}
+
+fun void main() {
+  var r1 = f1(3, 4)
+  print("Should be 7: " + itos(r1) + "\n")
+  var r2 = f3("ab")
+  println("Should be abab: " + r2)
+}

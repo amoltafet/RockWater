@@ -1,0 +1,53 @@
+#----------------------------------------------------------------------
+# Very basic module
+#----------------------------------------------------------------------
+
+fun void myTestModule@printNewLine() { 
+  print("\n")
+}
+
+type myTestModule@T { 
+  var int j = 0
+}
+
+fun void myTestModule@addOne(int i) { 
+  i = i + 1
+  print(i)
+}
+
+fun int myTestModule@f1(int x, int y) { 
+  print("... in f1")
+  return y
+}
+
+fun string myTestModule@f2(string x) { 
+  print("... in f2, x = " + x) 
+  return x + x
+}
+
+fun string myTestModule@f3(string x) { 
+  x = "hello world"
+  print("... in f3, after f2, x = " + x)
+  return x
+}
+
+#---------------------------------------------------------------------
+# Very basic module test
+#----------------------------------------------------------------------
+
+import myTestModule
+
+fun void main() {
+  print("Should be abab: ")
+  var int i = 0
+  myTestModule@printNewLine()
+
+  myTestModule@addOne(3)
+  
+
+  # addOne(3) -- THROWS ERROR ITS UNDEFINED
+
+}
+
+
+

@@ -1,0 +1,20 @@
+#---------------------------------------------------------------------
+# Very basic module test
+#----------------------------------------------------------------------
+
+import myTestModule
+
+fun void main() {
+  print("Should be abab: ")
+  var int i = 0
+  myTestModule@printNewLine()
+
+  myTestModule@addOne(3)
+  
+
+  # addOne(3) -- THROWS ERROR ITS UNDEFINED
+
+}
+
+
+
