@@ -8,9 +8,9 @@ My own programming language with the following capabilities
 
 # To Run
 Build the project
-    bazel build //:mypl
+   <p> bazel build //:mypl <p>
 To run a specific example file (/examples)
    <p> bazel-bin/mypl examples/exec-basic-function.mypl <p>
 To run test file (basic module test)
-    bazel test --test_output=all //:module-test
+   <p> bazel test --test_output=all //:module-test <p>
 
