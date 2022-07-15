@@ -10,7 +10,7 @@ My own programming language with the following capabilities
 Build the project
     bazel build //:mypl
 To run a specific example file (/examples)
-    bazel-bin/mypl examples/exec-basic-function.mypl
+   <p> bazel-bin/mypl examples/exec-basic-function.mypl <p>
 To run test file (basic module test)
     bazel test --test_output=all //:module-test
 
